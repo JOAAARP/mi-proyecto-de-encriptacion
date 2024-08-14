@@ -21,7 +21,7 @@ El `<head>` contiene metadatos esenciales, enlaces a fuentes externas como Googl
 El <header> contiene el logo de nuestro proyecto el cual corresponde al logo de alura latam
 ### Main Content
 Nuestro Contenido principal se dividio en 2 secciones la seccion de entrada y la seccion de salida
-###Sección de Entrada
+#### Sección de Entrada
 Esta sección permite a los usuarios ingresar texto que desean encriptar o desencriptar.
 ```html
 <section>
