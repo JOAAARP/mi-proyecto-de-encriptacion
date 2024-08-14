@@ -71,7 +71,7 @@ function decryptText(text) {
         'ufat': 'u'
     };
 
-    // Crear una expresión regular que capture todas las secuencias de reemplazo
+    
     var regex = new RegExp(Object.keys(replacements).join('|'), 'g');
 
     return text.replace(regex, match => replacements[match]);
