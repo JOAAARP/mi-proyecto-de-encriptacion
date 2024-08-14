@@ -5,7 +5,7 @@ Este proyecto permite a los usuarios encriptar y desencriptar mensajes usando un
 ### Head
 El `<head>` contiene metadatos esenciales, enlaces a fuentes externas como Google Fonts, y enlaces a los archivos de estilo CSS.
 
-```css
+```html
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@ El `<head>` contiene metadatos esenciales, enlaces a fuentes externas como Googl
 </head>
 
 ```
-### Headers
+### Header
 El <header> contiene el logo de nuestro proyecto el cual corresponde al logo de alura latam
 ### Main Content
 Nuestro Contenido principal se dividio en 2 secciones la seccion de entrada y la seccion de salida
@@ -55,7 +55,7 @@ El diseño CSS de este proyecto está orientado a crear una interfaz limpia y am
 ## Configuración Global
 - **Fondo general** y **estilo de fuente**: Se aplica un fondo color `#F3F5FC` y la fuente 'Inter' a toda la página para mantener un diseño coherente y profesional.
 - **Tamaño de fuente y peso**: El tamaño de fuente está establecido en 32px con un peso de 400, lo que asegura legibilidad.
-```html
+```css
 *{
     background: #F3F5FC;
     font-family: 'Inter';
@@ -64,7 +64,7 @@ El diseño CSS de este proyecto está orientado a crear una interfaz limpia y am
     line-height: 150%;
 }
 ```
-## Entrada de Texto
+## Entrada de Textos
 - **Estilos de Input**: El campo de entrada `#inputText` no tiene borde, y utiliza transformación a minúsculas, con un color específico `#0A3871` que refleja el esquema de color del sitio.
 
 ## Salida de Texto
