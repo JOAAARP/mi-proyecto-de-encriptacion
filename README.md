@@ -97,14 +97,49 @@ El diseño CSS de este proyecto está orientado a crear una interfaz limpia y am
 ```
 ## Mensajes de Estado
 - **Errores e Instrucciones**: Mensajes como `.mensaje-error` y `.mensaje-instruccion` están estilizados para aparecer sobre el contenido de fondo, haciendo uso de posiciones absolutas para colocarlos en el lugar adecuado.
+```css
+.mensaje-error {
+    font-size: 20px; 
+    font-weight: bold; 
+    position: absolute;
+    bottom: 40%;
+    right: 13%;
+    background-color: white;
+}
+
+.mensaje-instruccion {
+    font-size: 16px; 
+    font-weight: normal; 
+    position: absolute;
+    bottom: 30%;
+    right: 23%;
+    background-color: white;
+
+}
+```
 
 ## Botones
 - **Diseño y Hover de Botones**: Los botones están diseñados para ser intuitivos y cómodos de usar, con efectos `hover` que mejoran la interactividad.
 - **Botón de Copia**: El botón `#Copiar` es inicialmente invisible y solo se muestra cuando es relevante, manteniendo la interfaz limpia.
 
-## Consideraciones de Diseño
-- Los estilos están pensados para ser flexibles y fácilmente modificables para futuras expansiones o ajustes.
-- La consistencia visual entre elementos mejora la experiencia del usuario y la usabilidad del sitio.
+```css
+#encryptBtn:hover{
+    background-color: #1f4470;
+    color: #c7d4e6; 
+    cursor: pointer; 
+    
+}
+
+#desencryptBtn:hover {
+    background-color: #ccd8e9;
+    color: #173f70; 
+    cursor: pointer; 
+}
+
+#Copiar {
+    visibility: hidden; 
+}
+```
 
 Este resumen cubre los aspectos fundamentales del diseño CSS utilizado en el proyecto. Para más detalles, se puede revisar el archivo `style.css` incluido en el repositorio.
 
