@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    
+
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="Logo de la Empresa"> 
+    </header>
+
+<main>
+    <section>
+        <textarea id="inputText" rows="10" cols="30">Escribe tu mensaje secreto :3</textarea>
+
+        <div>
+            <p class="input-instructions">Por favor, solo poner letras mayúsculas y minúsculas.</p>
+        </div>
+        <div class="botones">
+        <button id="encryptBtn">Encriptar</button>
+        <button id="desencryptBtn">Desencriptar</button>
+        </div>
+
+    </section>
+    
+    <section>
+        
+        
+        <div class="output-container">
+        <p class="mensaje-error">Ningún mensaje fue encontrado.</p>
+        <p class="mensaje-instruccion">Ingresa el texto que desees</p>        
+        <p class="mensaje-instruccion2">encriptar o desencriptar.</p>   
+        <textarea id="outputText" rows="10" cols="20" readonly>
+        </textarea>
+        <button id="Copiar">Copiar</button>
+        </div>
+    
+        
+    
+    </section>
+
+</main>
+<script src="script.js"></script>
+
+</body>
+</html>
