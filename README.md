@@ -216,4 +216,14 @@ document.getElementById('desencryptBtn').addEventListener('click', function() {
     }
 });
 ```
+## Agradecimientos
+
+¡Gracias por visitar y explorar el proyecto de encriptación! Espero que hayas encontrado la información útil y el proyecto interesante. Si tienes alguna pregunta, sugerencia o deseas contribuir al proyecto, no dudes en abrir un issue o enviar un pull request. Tu feedback y contribuciones son siempre bienvenidos y muy apreciados.
+
+Sigue explorando y experimentando, y ¡no olvides mantener la curiosidad y la pasión por aprender y mejorar!
+
+---
+
+**¡Hasta la próxima!**
+
 
