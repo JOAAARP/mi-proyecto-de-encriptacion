@@ -16,5 +16,5 @@ El `<head>` contiene metadatos esenciales, enlaces a fuentes externas como Googl
     <link rel="stylesheet" href="style.css"> 
 </head>
 
-```markdown
+```
 #### Body
