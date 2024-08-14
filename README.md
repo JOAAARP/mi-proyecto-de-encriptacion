@@ -141,5 +141,79 @@ El diseño CSS de este proyecto está orientado a crear una interfaz limpia y am
 }
 ```
 
-Este resumen cubre los aspectos fundamentales del diseño CSS utilizado en el proyecto. Para más detalles, se puede revisar el archivo `style.css` incluido en el repositorio.
+Este resumen cubre los aspectos fundamentales del diseño CSS utilizado en el proyecto. Para más detalles, se puede revisar el archivo `style.css` incluido en el repositorio ya que si quisieramos abordar todas las clases no acabamos en este readme :o.
+
+# Estructura JavaScript
+Probablemente la seccion mas larga pero mas sencilla de nuestro codigo :3. El script JavaScript proporciona las funciones esenciales de encriptación y desencriptación, además de una funcionalidad para copiar texto al portapapeles. A continuación, se detallan las funciones principales implementadas en el archivo `script.js`.
+## Encriptar Mensajes
+Al presionar el botón "Encriptar", el texto introducido por el usuario es procesado para convertir todas las vocales según reglas definidas, transformando cada vocal en una cadena de caracteres específica.
+```javascript
+document.getElementById('encryptBtn').addEventListener('click', function() {
+    var inputText = document.getElementById('inputText').value.trim(); 
+    if (inputText === '') {
+        return; 
+    }
+    if (inputText === inputText.toLowerCase() && /^[a-z\s]*$/.test(inputText)) {
+        var encryptedText = encryptText(inputText);
+        document.getElementById('outputText').value = encryptedText;
+        document.getElementById('Copiar').style.visibility = 'visible';
+        document.querySelector('.mensaje-error').style.display = 'none';
+        document.querySelector('.mensaje-instruccion').style.display = 'none';
+        document.querySelector('.mensaje-instruccion2').style.display = 'none';
+        document.getElementById('outputText').style.backgroundImage = 'none';
+    } else {
+        alert("Por favor, ingrese texto en minúsculas y sin caracteres especiales.");
+    }
+});
+```
+## Desencriptar Mensajes
+El botón "Desencriptar" permite revertir el proceso de encriptación, devolviendo el texto original a partir del texto encriptado.
+```javascript
+document.getElementById('desencryptBtn').addEventListener('click', function() {
+    var inputText = document.getElementById('inputText').value;
+    if (inputText === inputText.toLowerCase() && /^[a-z\s]*$/.test(inputText)) {
+        var decryptedText = decryptText(inputText);
+        document.getElementById('outputText').value = decryptedText;
+    } else {
+        alert("Por favor, ingrese texto en minúsculas y sin caracteres especiales.");
+    }
+});
+```
+## Función de Encriptación `encryptText`
+
+La función `encryptText` modifica el texto ingresado por el usuario reemplazando cada vocal con una cadena específica, de acuerdo con las siguientes reglas de encriptación:
+
+- 'e' → 'enter'
+- 'i' → 'imes'
+- 'a' → 'ai'
+- 'o' → 'ober'
+- 'u' → 'ufat'
+
+El proceso utiliza una expresión regular para identificar todas las vocales en el texto y las reemplaza mediante un objeto de mapeo que asocia cada vocal con su correspondiente cadena encriptada.
+
+```javascript
+function encryptText(text) {
+    var replacements = {
+        'e': 'enter',
+        'i': 'imes',
+        'a': 'ai',
+        'o': 'ober',
+        'u': 'ufat'
+    };
+    return text.replace(/[eioua]/g, match => replacements[match]);
+}
+```
+## Desencriptar Mensajes
+El botón "Desencriptar" permite revertir el proceso de encriptación, devolviendo el texto original a partir del texto encriptado.
+```javascript
+document.getElementById('desencryptBtn').addEventListener('click', function() {
+    var inputText = document.getElementById('inputText').value;
+    if (inputText === inputText.toLowerCase() && /^[a-z\s]*$/.test(inputText)) {
+        var decryptedText = decryptText(inputText);
+        document.getElementById('outputText').value = decryptedText;
+    } else {
+        alert("Por favor, ingrese texto en minúsculas y sin caracteres especiales.");
+    }
+});
+```
 
