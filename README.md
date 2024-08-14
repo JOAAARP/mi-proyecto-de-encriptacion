@@ -36,7 +36,7 @@ Esta sección permite a los usuarios ingresar texto que desean encriptar o desen
 </section>
 ```
 #### Sección de Salida
-Muestra los resultados de la encriptación o desencriptación y ofrece una opción para copiar el texto.
+Muestra los resultados de la encriptación o desencriptación y ofrece una opción para copiar el texto. Tambien podemos ver una pequeña trampa, escribi la frase en distintas lineas de codigo para poder darle un formato que se nos sea comodo y visualmente mas guapo
 ```html
 <section>
     <div class="output-container">
