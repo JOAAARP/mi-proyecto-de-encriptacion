@@ -64,13 +64,37 @@ El diseño CSS de este proyecto está orientado a crear una interfaz limpia y am
     line-height: 150%;
 }
 ```
-## Entrada de Textos
+## Entrada de Textos y Salida de Texto
 - **Estilos de Input**: El campo de entrada `#inputText` no tiene borde, y utiliza transformación a minúsculas, con un color específico `#0A3871` que refleja el esquema de color del sitio.
-
-## Salida de Texto
 - **Contenedor de Salida**: El `.output-container` está diseñado para ajustarse de manera relativa dentro del layout, con dimensiones específicas y padding para alinear el contenido interno.
 - **Estilos de Text Area**: El `#outputText` incluye una imagen de fondo y estilos para asegurar que el texto es fácil de leer y estéticamente agradable.
+```css
+#inputText {
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+.output-container {
+    position: relative;
+    
+    width: 400px;  
+    height: 850px; 
+    padding-left: 35%;
+}
+#outputText {
+    background-image: url('imagenes/Muñeco.png');
+    background-repeat:no-repeat;
+    height: 100%;
+    width: 85%;
+    border: none; 
+    border-radius: 24px;
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    font-size: 24px;
+}
 
+```
 ## Mensajes de Estado
 - **Errores e Instrucciones**: Mensajes como `.mensaje-error` y `.mensaje-instruccion` están estilizados para aparecer sobre el contenido de fondo, haciendo uso de posiciones absolutas para colocarlos en el lugar adecuado.
 
