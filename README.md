@@ -5,7 +5,7 @@ Este proyecto permite a los usuarios encriptar y desencriptar mensajes usando un
 ### Head
 El `<head>` contiene metadatos esenciales, enlaces a fuentes externas como Google Fonts, y enlaces a los archivos de estilo CSS.
 
-```html
+```css
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@ El `<head>` contiene metadatos esenciales, enlaces a fuentes externas como Googl
 </head>
 
 ```
-### Header
+### Headers
 El <header> contiene el logo de nuestro proyecto el cual corresponde al logo de alura latam
 ### Main Content
 Nuestro Contenido principal se dividio en 2 secciones la seccion de entrada y la seccion de salida
