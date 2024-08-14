@@ -17,4 +17,36 @@ El `<head>` contiene metadatos esenciales, enlaces a fuentes externas como Googl
 </head>
 
 ```
-#### Body
+### Header
+El <header> contiene el logo de nuestro proyecto el cual corresponde al logo de alura latam
+### Main Content
+Nuestro Contenido principal se dividio en 2 secciones la seccion de entrada y la seccion de salida
+####Sección de Entrada
+Esta sección permite a los usuarios ingresar texto que desean encriptar o desencriptar.
+```html
+<section>
+    <textarea id="inputText" rows="10" cols="30">Escribe tu mensaje secreto :3</textarea>
+    <div>
+        <p class="input-instructions">Por favor, solo poner letras mayúsculas y minúsculas.</p>
+    </div>
+    <div class="botones">
+        <button id="encryptBtn">Encriptar</button>
+        <button id="desencryptBtn">Desencriptar</button>
+    </div>
+</section>
+```
+####Sección de Salida
+Muestra los resultados de la encriptación o desencriptación y ofrece una opción para copiar el texto.
+```html
+<section>
+    <div class="output-container">
+        <p class="mensaje-error">Ningún mensaje fue encontrado.</p>
+        <p class="mensaje-instruccion">Ingresa el texto que desees</p>
+        <p class="mensaje-instruccion2">encriptar o desencriptar.</p>
+        <textarea id="outputText" rows="10" cols="20" readonly></textarea>
+        <button id="Copiar">Copiar</button>
+    </div>
+</section>
+```
+
+
