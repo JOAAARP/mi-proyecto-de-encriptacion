@@ -50,15 +50,20 @@ Muestra los resultados de la encriptación o desencriptación y ofrece una opci�
 ```
 # Estructura CSS
 
-El diseño CSS de este proyecto está orientado a crear una interfaz limpia y amigable, utilizando estilos modernos y responsivos. A continuación, se detallan los puntos clave de la hoja de estilos.
+El diseño CSS de este proyecto está orientado a crear una interfaz limpia y amigable, utilizando estilos modernos y responsivos. A continuación, se detallan los puntos clave de la hoja de estilos que utilice a mi manera para intentar llegar a estilo requerido.
 
 ## Configuración Global
 - **Fondo general** y **estilo de fuente**: Se aplica un fondo color `#F3F5FC` y la fuente 'Inter' a toda la página para mantener un diseño coherente y profesional.
 - **Tamaño de fuente y peso**: El tamaño de fuente está establecido en 32px con un peso de 400, lo que asegura legibilidad.
-
-## Layout Principal
-- **Flexbox**: Se usa Flexbox en el `<main>` para centrar y alinear correctamente todos los elementos, facilitando la responsividad del diseño.
-
+```html
+*{
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+```
 ## Entrada de Texto
 - **Estilos de Input**: El campo de entrada `#inputText` no tiene borde, y utiliza transformación a minúsculas, con un color específico `#0A3871` que refleja el esquema de color del sitio.
 
