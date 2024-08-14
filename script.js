@@ -33,7 +33,7 @@ document.getElementById('desencryptBtn').addEventListener('click', function() {
     if (inputText === inputText.toLowerCase() && /^[a-z\s]*$/.test(inputText)) {
         var decryptedText = decryptText(inputText);
         document.getElementById('outputText').value = decryptedText;
-        // Opcionalmente ocultar o mostrar elementos según sea necesario
+       
     } else {
         alert("Por favor, ingrese texto en minúsculas y sin caracteres especiales.");
     }
